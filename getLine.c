@@ -5,7 +5,7 @@
  * input_buf - buf chained commands
  * @info: parameter struct
  * @buf: address of buffer
- * @len: address of len var
+ * @len: this is len address of the progrm
  *
  * Return: bytes read
  */
