@@ -50,7 +50,7 @@ int _mycd(info_t *info)
 			chdir_ret = /* TODO: what should this be? */
 				chdir((dir = _getenv(info, "PWD=")) ? dir : "/");
 		else
-			chdir_ret = chdir(dir);
+			chdir_ret = chdir(dir);/* changes pathnamed dir to current */
 	}
 	else if (_strcmp(info->argv[1], "-") == 0)
 	{
